@@ -1,0 +1,195 @@
+
+@media screen and (min-height: 750px){
+   
+    .formcs p {
+        position: relative;
+        top: -50px;
+    }
+    .motsdiv,.phrasediv{
+        position: relative;
+        top: -50px;
+    }
+    .champtext{position: relative;
+        top: -30px;}
+        #wordortext,.btn{
+            position: relative;
+        top: -20px;
+        }
+        .share{
+            position: relative;
+        top: 20px;
+        }
+}
+@media screen and (min-height: 850px){
+    .formcs p {
+       font-size: 18px;
+       top: -70px;
+    }
+    .motsdiv,.phrasediv{
+        
+        top: -50px;
+    }
+    .champtext{
+        height: 70px;
+        top: -20px;}
+        #wordortext,.btn{
+            
+        top: 10px;
+        }
+        .score{
+             position: relative;
+        top: 30px;
+        }
+        .share{
+           
+        top: 60px;
+      }
+      .share button{
+        height: 50px;
+        width: 100px;
+         font-size: 20px;
+      }
+      footer p{
+        padding-top: 40px;
+      }
+}
+@media screen and (min-height: 1050px){
+     .formcs{
+      
+        height: 800px;
+        width: 750px;
+    }
+     .formcs p {
+       font-size: 23px;
+       top: -120px;
+       text-align: center;
+    }
+    .motsdiv,.phrasediv{
+        font-size: 22px;
+        top: -90px;
+    }
+    .champtext{
+        height: 100px;
+        top: -40px;
+    width: 90%;}
+        #wordortext{
+            width: 500px;
+            height: 40px;
+      
+        }
+        #wordortext,.btn{
+            top:-20px;
+        }
+        .wordbtn button{
+            width: 150px;
+            height: 39px;
+        }
+        .score{
+             position: relative;
+        top: 20px;
+        font-size: 30px;
+        }
+        .share{
+           
+        top: 80px;
+      }
+      .share button{
+        height: 60px;
+        width: 200px;
+         font-size: 20px;
+      }
+      .timer-container{
+        right: -50px;
+        
+      }
+
+}
+@media screen and (min-height: 1200px){
+     .formcs{top: -80px;}
+    header h1,main h2,main p {
+        padding: 10px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    main h2{
+        font-size: 28px;
+    }
+    main p{
+        font-size: 20px;
+    }
+    .champtext{
+        font-size: 40px;
+    }
+    .timer-container{
+        top: -30px;
+    }
+}
+@media screen and (min-height: 1300px){
+    .formcs{top: -80px;}
+    header h1,main h2,main p {
+        padding: 30px;
+    }
+    header h1{
+        font-size: 50px;
+    }
+    main h2{
+        font-size: 30px;
+    }
+    main p{
+        font-size: 24px;
+    }
+}
+@media  screen and (max-width:700px) {
+    .formcs{
+        width: 300px;
+    }
+    .champtext{
+        width: 200px;
+    }
+    #wordortext{
+        width: 150px;
+    }
+    .wordbtn button{
+        width: 50px;
+        font-size: 12px;
+    }
+   .formcs p{
+    display: block;      /* ou supprime la règle si p est déjà block */
+    text-align: center;  /* centre horizontalement */
+    padding: 0;
+}
+#nb{
+    font-size: 13px;
+}
+     header h1{
+        font-size: 20px;
+    }
+    main h2{
+        font-size: 16px;
+    }
+    main p{
+        font-size: 14px;
+    }
+    .champtext{
+        font-size: 17px;
+    }
+   .timer-container{
+   right: 170px;
+   }
+}
+@media  screen and (max-width:450px) {
+     header h1{
+        font-size: 20px;
+    }
+    main h2{
+        font-size: 16px;
+    }
+    main p{
+        font-size: 12px;
+    }
+    .champtext{
+        font-size: 17px;
+    }
+  
+}
