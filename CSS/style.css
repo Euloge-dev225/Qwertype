@@ -391,14 +391,18 @@ button:focus {
 #mobile-warning {
   display: none; /* caché par défaut */
   position: fixed;
-  inset: 0; /* couvre tout l’écran */
+  top: 0;
+  left: 0;
+  width: 100vw;  /* largeur du viewport */
+  height: 100dvh; /* hauteur du viewport */
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(6px); /* effet flou sympa */
+  backdrop-filter: blur(6px);
   color: white;
   justify-content: center;
   align-items: center;
   text-align: center;
   z-index: 9999;
+  overflow: hidden; /* empêche le scroll interne */
 }
 
 #mobile-warning .warning-content {
@@ -406,14 +410,16 @@ button:focus {
   border: 2px solid white;
   border-radius: 15px;
   padding: 30px;
-  width: 80%;
+  width: 85%;
   max-width: 400px;
+  box-sizing: border-box;
 }
 
 #mobile-warning h2 {
   margin-bottom: 10px;
   color: #ff5555;
 }
+
 #error{
   color: red;
   font-weight: bold;

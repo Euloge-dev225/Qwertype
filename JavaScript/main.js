@@ -56,7 +56,7 @@ form.addEventListener("submit",(event)=>{
     const balisenom=document.getElementById("name");
     const baliseEmail=document.getElementById("email");
     const body = `Je viens de faire ${score}/${i} sur Qwertype ! 😎%0A
-Essaie de battre mon score sur https://qwertype.com  😉`;
+Essaie de battre mon score sur https://euloge-dev225.github.io/Qwertype/  😉`;
 
     const nom = balisenom.value;
     const mail=baliseEmail.value;
