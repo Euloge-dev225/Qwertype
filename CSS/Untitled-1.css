@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+header h1,main h2,main p {
+    color: rgb(73, 103, 201);
+    display: flex;
+     justify-content: center;
+     padding: 10px;
+
+}
+.formcs p{
+    display: flex;
+     justify-content: center;
+     padding: 10px;
+}
+.formcs{
+    background-color: rgb(73, 103, 201);
+    border-radius: 20px;
+    height: 650px;
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ position: relative;
+  top: -40px; 
+   
+}
+.champform{
+    display: flex;
+     justify-content: center;
+}
+.champtext{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.champtext {
+    background-color: white;
+     border: none;
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+    color: rgb(73, 103, 201);
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+}
+.wordbtn {
+     display: flex;
+     justify-content: center;
+}
+#wordortext{
+     border: none;
+    width: 410px;
+    height: 30px;
+    border-radius: 10px;
+   
+}
+.wordbtn button{
+     border: none;
+    height: 29px;
+    width: 100px;
+    border-radius: 8px;
+    color: rgb(73, 103, 201);
+    font-size: 16px;
+    font-weight: bold;
+  
+}
+.share{
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   transform: translateY(-20px);
+    
+    
+}
+.share button{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(73, 103, 201);
+    font-size: 16px;
+    font-weight: bold;
+     
+  
+}
+.btn{
+    padding-left: 10px;
+}
+
+.motsdiv{
+    padding-right: 10px;
+    
+}
+.phrasediv{
+    padding-left: 10px;
+}
+.motsdiv,.phrasediv{transform: translateY(10px);}
+footer{
+    
+    display: flex;
+    background-color:  rgb(73, 103, 201);
+    margin-top: 10px;
+   width: 100%;
+   justify-content: center;
+     height: 100px;
+}
+footer p{
+    
+   font-weight: 600;
+    font-size: 17px;
+   padding-top: 20px;
+     
+}
+footer a{
+  color: black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;   /* centre horizontalement */
+  align-items: center; 
+min-height: 100vh; }
+    header {
+    display: flex;
+    flex-direction: column;}
+    main {
+            flex: 1;
+   /* display: flex;
+    flex-direction: column;*/}
+    html, body {
+    height: 100%;
+    margin: 0; 
+}
+button:hover {
+    color: rgb(73, 103, 201);
+    background-color: white
+    cursor : pointer;
+}
+
+button:focus {
+    background-color:white;
+    border: 3px solid rgb(73, 103, 201);
+    padding: 2px;
+    
+}
+.score {
+    font-size: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    margin: 10px;
+     transform: translateY(6px);
+}
+.score span {
+  margin-left: 5px; /* espace de 5px avant le ":" */
+}
+#openbtn{
+  transform: translateY(30px);
+}
+.popupform{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;   /* espace automatique entre chaque champ */
+  width: 100%;
+   
+    
+   
+}
+.popupform label{
+   
+     font-size: 15px;
+     font-weight: bold;
+}
+.popupform input{
+    width: 80%;
+     height: 30px;
+     border-radius: 10px;
+     border: none;
+    
+}
+.popupform button{
+    margin-top: 50px;
+    display: block;
+  margin: 20px auto 0 auto; /* centré horizontalement */
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(73, 103, 201);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popcont {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}
+.popucontent{
+    background-color: rgb(73, 103, 201); 
+    border-radius: 20px;
+    height: 270px;
+    width: 300px;
+    padding: 30px;
+    position: relative;
+   display: flex;
+  flex-direction: column;   /* organisation verticale */
+  justify-content: space-between; /* haut (titre) / centre (form) / bas (bouton) */
+  align-items: center;
+
+}
+#overlay{
+     display: none;               /* caché par défaut */
+   position: fixed; 
+  inset: 0;                    /* couvre tout l’écran */
+  background: rgba(0,0,0,0.5); /* gris/noir transparent */
+  justify-content: center;     /* centre horizontal */
+  align-items: center;
+ }
+ #overlay.open {
+  display: flex;
+}
+.close {
+  position: absolute;      /* fixé par rapport au parent */
+  top: 15px;               /* distance du haut */
+  right: 20px;             /* distance de la droite */
+  font-size: 24px;         /* taille du X */
+  font-weight: bold;
+  color: white;            /* couleur du X */
+  cursor: pointer;         /* main au survol */
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: black;              /* devient rouge au survol */
+}
+.popcont h2 {
+   margin: 0;
+  color: white;
+  text-align: center;
+}
+#nom{
+   padding-bottom: 0px;
+}
+#name{
+    margin-bottom: 30px;
+}
+#mail{
+    padding-bottom: 10px;
+}
+#email{
+    margin-bottom: 0px;
+    
+}
+
+#nb{
+      transform: translateY(-10px);
+   
+}
+.timer-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto;
+  transform: translate(326px,-2px);
+  z-index: 1;
+  right: 22px;
+  top: 10px;
+}
+
+.timer-svg {
+  transform: rotate(-90deg);
+}
+
+.timer-bg {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 4;
+}
+
+.timer-progress {
+  fill: none;
+  stroke: rgb(131, 118, 118);
+  stroke-width: 4;
+  stroke-dasharray: 94; /* 2πr ≈ 94 */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+/* Le fond semi-transparent */
+.modal {
+  display: none; /* caché par défaut */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Contenu du modal */
+.modal-content {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal h2 {
+  color: rgb(73, 103, 201);
+}
+
+.modal button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#rejouerBtn {
+  background: rgb(73, 103, 201);
+  color: white;
+}
+
+#quitterBtn {
+  background: #ccc;
+}
+
+/* Conteneur global (en haut à droite) */
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  transform: translate(26px,-20px);
+}
+
+/* Style de chaque alerte */
+.toast {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Quand elle est visible */
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+ html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+   
+}
+#mobile-warning {
+  display: none; /* caché par défaut */
+  position: fixed;
+  inset: 0; /* couvre tout l’écran */
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(6px); /* effet flou sympa */
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+}
+
+#mobile-warning .warning-content {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 80%;
+  max-width: 400px;
+}
+
+#mobile-warning h2 {
+  margin-bottom: 10px;
+  color: #ff5555;
+}
+#error{
+  color: red;
+  font-weight: bold;
+ 
+ 
+}
