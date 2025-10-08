@@ -138,6 +138,7 @@ rejouerBtn.addEventListener("click", () => {
 function Exit(){
 quitterBtn.addEventListener("click", () => {
   modal.style.display = "none";
+  reload.style.display="flex";
   
 });
 }
@@ -196,3 +197,9 @@ function validerEmail(email){
     throw new Error(`l'email ${email} est invalid veuillez ressayer`);
     else return true
 }
+const reload=document.getElementById("reloadBtn");
+reload.addEventListener("click", () => {
+  reload.style.display = "none";
+  rejouerPartie();
+  inputext.focus(); // ta fonction de reset/rejouer
+});

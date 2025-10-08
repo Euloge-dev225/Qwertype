@@ -8,6 +8,8 @@
         score=0;
         ptnscore.textContent=i;
         ptn.textContent=score;
+        jeuActif=true;
+        reload.style.display="none";
        
         if(selectedvalue === "1") {
              tableaudemot=shuffleArrayExceptFirst(tableaudemot);
