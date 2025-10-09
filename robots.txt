@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://euloge-dev225.github.io/Qwertype/sitemap.xml
